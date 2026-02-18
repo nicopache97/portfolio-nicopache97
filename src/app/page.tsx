@@ -4,7 +4,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { SectionTransitions } from "@/components/SectionTransitions";
 import {
     Mail,
     Github,
@@ -240,6 +241,7 @@ const activities = [
 export default function Home() {
     return (
         <main className="min-h-screen">
+            <SectionTransitions />
             {/* Navigation */}
             <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -251,7 +253,7 @@ export default function Home() {
                             {["Inicio", "Sobre mí", "Expertise", "Trayectoria", "Proyectos"].map((item, i) => (
                                 <a
                                     key={item}
-                                    href={`#${["hero", "about", "expertise", "journey", "projects"][i]}`}
+                                    href={`#${["hero", "sobre-mi", "expertise", "trayectoria", "proyectos"][i]}`}
                                     className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-muted"
                                 >
                                     {item}
@@ -269,13 +271,14 @@ export default function Home() {
             </nav>
 
             {/* Hero Section */}
-            <section id="hero" className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+            <section id="hero" className="section-transition pt-32 pb-20 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-6xl mx-auto">
                     <div className="flex flex-col lg:flex-row gap-12 items-start">
                         <div className="flex-1 space-y-6">
                             <div className="flex items-center gap-3">
                                 <Avatar className="w-16 h-16 border-2 border-primary/20">
-                                    <AvatarFallback className="bg-gradient-to-br from-primary to-purple-600 text-white text-xl font-bold">
+                                    <AvatarImage src="/profile.webp" alt="Nicolás Pacheco" />
+                                    <AvatarFallback className="bg-gradient-to-br from-primary to-cyan-600 text-white text-xl font-bold">
                                         NP
                                     </AvatarFallback>
                                 </Avatar>
@@ -387,7 +390,7 @@ export default function Home() {
             </section>
 
             {/* About Section */}
-            <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 section-gradient">
+            <section id="sobre-mi" className="section-transition py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 section-gradient">
                 <div className="max-w-6xl mx-auto">
                     <div className="flex items-center gap-2 mb-4">
                         <Sparkles className="w-5 h-5 text-primary" />
@@ -435,7 +438,7 @@ export default function Home() {
             </section>
 
             {/* Expertise Section */}
-            <section id="expertise" className="py-20 px-4 sm:px-6 lg:px-8">
+            <section id="expertise" className="section-transition py-20 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl sm:text-4xl font-serif font-bold mb-4">Áreas de Expertise</h2>
                     <p className="text-muted-foreground mb-12 max-w-2xl">
@@ -484,7 +487,7 @@ export default function Home() {
             </section>
 
             {/* Journey Section */}
-            <section id="journey" className="py-20 px-4 sm:px-6 lg:px-8 section-gradient">
+            <section id="trayectoria" className="section-transition py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 section-gradient">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl sm:text-4xl font-serif font-bold mb-4">Trayectoria Profesional</h2>
@@ -587,7 +590,7 @@ export default function Home() {
             </section>
 
             {/* Projects Section */}
-            <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
+            <section id="proyectos" className="section-transition py-20 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl sm:text-4xl font-serif font-bold mb-4">Proyectos Destacados</h2>
                     <p className="text-muted-foreground mb-12 max-w-2xl">
@@ -655,7 +658,7 @@ export default function Home() {
             </section>
 
             {/* Contact Section */}
-            <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 section-gradient">
+            <section id="contact" className="section-transition py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 section-gradient">
                 <div className="max-w-4xl mx-auto text-center">
                     <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
                         <Mail className="w-8 h-8 text-primary" />
@@ -690,7 +693,7 @@ export default function Home() {
                         </div>
                         <div className="flex items-center gap-2">
                             <Phone className="w-4 h-4" />
-                            (2974) 055402
+                            (+54) 9 221 3643760
                         </div>
                     </div>
                 </div>

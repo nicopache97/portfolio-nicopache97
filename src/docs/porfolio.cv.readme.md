@@ -3,7 +3,7 @@
 **Prompt Engineer | Data | AI Dev**
 La Plata, Buenos Aires, Argentina
 
-📞 (2974) 055402
+📞 (+54) 9 221 3643760
 📧 [nicopache1997@gmail.com](mailto:nicopache1997@gmail.com)
 🔗 GitHub: [https://github.com/nicopache97](https://github.com/nicopache97)
 🔗 LinkedIn: [https://linkedin.com/in/nico-pacheco](https://linkedin.com/in/nico-pacheco)
