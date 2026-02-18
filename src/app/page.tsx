@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import {
     Mail,
     Github,
@@ -273,12 +274,19 @@ export default function Home() {
                     <div className="flex flex-col lg:flex-row gap-12 items-start">
                         <div className="flex-1 space-y-6">
                             <div className="flex items-center gap-3">
-                                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-emerald-400 flex items-center justify-center text-white font-bold text-lg">
-                                    NP
+                                <Avatar className="w-16 h-16 border-2 border-primary/20">
+                                    <AvatarFallback className="bg-gradient-to-br from-primary to-purple-600 text-white text-xl font-bold">
+                                        NP
+                                    </AvatarFallback>
+                                </Avatar>
+                                <div className="flex flex-col gap-1">
+                                    <Badge variant="secondary" className="text-xs w-fit">
+                                        Ing. en Computación
+                                    </Badge>
+                                    <Badge variant="outline" className="text-xs w-fit border-primary/30 text-primary">
+                                        Disponible
+                                    </Badge>
                                 </div>
-                                <Badge variant="secondary" className="text-xs">
-                                    Ing. en Computación
-                                </Badge>
                             </div>
 
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold leading-tight">
