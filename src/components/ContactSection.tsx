@@ -5,8 +5,8 @@ import { Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
 export function ContactSection() {
     return (
-        <section id="contact" className="section-transition py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 section-gradient">
-            <div className="max-w-4xl mx-auto text-center">
+        <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 section-gradient">
+            <div className="section-transition max-w-4xl mx-auto text-center">
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
                     <Mail className="w-8 h-8 text-primary" />
                 </div>

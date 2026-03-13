@@ -7,8 +7,8 @@ import { activities, courses, education, experience } from "@/data/portfolio";
 
 export function JourneySection() {
     return (
-        <section id="trayectoria" className="section-transition py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 section-gradient">
-            <div className="max-w-6xl mx-auto">
+        <section id="trayectoria" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 section-gradient">
+            <div className="section-transition max-w-6xl mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl sm:text-4xl font-serif font-bold mb-4">Trayectoria Profesional</h2>
                     <p className="text-muted-foreground max-w-2xl mx-auto">

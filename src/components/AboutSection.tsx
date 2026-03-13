@@ -5,8 +5,8 @@ import { Brain, Server, Sparkles, Zap } from "lucide-react";
 
 export function AboutSection() {
     return (
-        <section id="sobre-mi" className="section-transition py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 section-gradient">
-            <div className="max-w-6xl mx-auto">
+        <section id="sobre-mi" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 section-gradient">
+            <div className="section-transition max-w-6xl mx-auto">
                 <div className="flex items-center gap-2 mb-4">
                     <Sparkles className="w-5 h-5 text-primary" />
                     <span className="text-sm text-primary uppercase tracking-wider font-medium">Perfil Profesional</span>

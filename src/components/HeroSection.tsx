@@ -8,8 +8,8 @@ import { stats } from "@/data/portfolio";
 
 export function HeroSection() {
     return (
-        <section id="hero" className="section-transition pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-6xl mx-auto">
+        <section id="hero" className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+            <div className="section-transition max-w-6xl mx-auto">
                 <div className="flex flex-col lg:flex-row gap-12 items-start">
                     <div className="flex-1 space-y-6">
                         <div className="flex items-center gap-3">

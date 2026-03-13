@@ -7,8 +7,8 @@ import { expertiseCards } from "@/data/portfolio";
 
 export function ExpertiseSection() {
     return (
-        <section id="expertise" className="section-transition py-20 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-6xl mx-auto">
+        <section id="expertise" className="py-20 px-4 sm:px-6 lg:px-8">
+            <div className="section-transition max-w-6xl mx-auto">
                 <h2 className="text-3xl sm:text-4xl font-serif font-bold mb-4">Áreas de Expertise</h2>
                 <p className="text-muted-foreground mb-12 max-w-2xl">
                     Desde sistemas de IA hasta microcontroladores, aporto experiencia diversa para arquitectar,

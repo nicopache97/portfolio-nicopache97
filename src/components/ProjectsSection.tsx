@@ -8,8 +8,8 @@ import { projects } from "@/data/portfolio";
 
 export function ProjectsSection() {
     return (
-        <section id="proyectos" className="section-transition py-20 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-6xl mx-auto">
+        <section id="proyectos" className="py-20 px-4 sm:px-6 lg:px-8">
+            <div className="section-transition max-w-6xl mx-auto">
                 <h2 className="text-3xl sm:text-4xl font-serif font-bold mb-4">Proyectos Destacados</h2>
                 <p className="text-muted-foreground mb-12 max-w-2xl">
                     Desde sistemas IoT hasta plataformas de IA, estos son proyectos que he diseñado y desarrollado
