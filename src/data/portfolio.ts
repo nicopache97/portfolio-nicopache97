@@ -50,7 +50,7 @@ export interface Project {
 export const stats: Stat[] = [
     { value: "3+", label: "Años Exp" },
     { value: "10+", label: "Proyectos" },
-    { value: "68+", label: "Clientes IA" },
+    { value: "90+", label: "Clientes IA" },
     { value: "5+", label: "Equipos" },
 ];
 
