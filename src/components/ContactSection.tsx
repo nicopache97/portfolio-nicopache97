@@ -18,17 +18,27 @@ export function ContactSection() {
                     Combino experiencia técnica con habilidades de comunicación para crear soluciones efectivas.
                 </p>
 
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 flex-wrap">
                     <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
                         <a href="mailto:nicopache1997@gmail.com">
                             <Mail className="w-5 h-5 mr-2" />
-                            Envíame un Email
+                            Email
                         </a>
                     </Button>
-                    <Button asChild variant="outline" size="lg">
+                    <Button asChild variant="outline" size="lg" className="hover:bg-[#0e76a8]">
                         <a href="https://linkedin.com/in/nico-pacheco" target="_blank" rel="noopener noreferrer">
                             <Linkedin className="w-5 h-5 mr-2" />
-                            Conectar en LinkedIn
+                            LinkedIn
+                        </a>
+                    </Button>
+                    <Button asChild variant="outline" size="lg" className="hover:bg-[#20bd5a]">
+                        <a
+                            href="https://wa.me/5492213643760?text=Me%20intereso%20tu%20perfil%20para%20un%20proyecto%20juntos%20%C2%BFte%20puedo%20llamar%3F"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Phone className="w-5 h-5 mr-2" />
+                            WhatsApp
                         </a>
                     </Button>
                 </div>
