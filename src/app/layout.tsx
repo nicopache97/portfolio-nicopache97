@@ -11,8 +11,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    title: "Nicolás Pacheco - Ingeniero en Computación",
+    title: "ING. Nicolás Pacheco",
     description: "Portfolio de Nicolás Pacheco - Ingeniero en Computación especializado en Sistemas Embebidos, Full-Stack Development, AI & Machine Learning",
+    icons: {
+        icon: "/logo.svg",
+        shortcut: "/logo.svg",
+        apple: "/logo.svg",
+    },
 };
 
 export default function RootLayout({
