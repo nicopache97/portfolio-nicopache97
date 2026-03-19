@@ -1,9 +1,11 @@
-"use client";
-
+import { usePortfolio } from "@/components/PortfolioContext";
+import { Sparkles, Brain, Zap, Server } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Brain, Server, Sparkles, Zap } from "lucide-react";
 
 export function AboutSection() {
+    const { data } = usePortfolio();
+    const { about } = data;
+
     return (
         <section id="sobre-mi" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 section-gradient">
             <div className="section-transition max-w-6xl mx-auto">
@@ -13,28 +15,21 @@ export function AboutSection() {
                 </div>
 
                 <h2 className="text-3xl sm:text-4xl font-serif font-bold mb-8">
-                    Conectando <span className="text-gradient italic">Tecnología</span> con{" "}
-                    <span className="text-gradient italic">Soluciones Reales</span>
+                    {about.title[0]} <span className="text-gradient italic">{about.title[1]}</span> {about.title[2]}{" "}
+                    <span className="text-gradient italic">{about.title[3]}</span>
                 </h2>
 
                 <div className="grid md:grid-cols-2 gap-8 mb-12">
                     <div className="space-y-4">
                         <p className="text-muted-foreground leading-relaxed">
-                            Joven profesional apasionado por la tecnología y el trabajo colaborativo para desarrollar
-                            soluciones creativas y automatizadas para la industria.
+                            {about.description[0]}
                         </p>
                         <p className="text-muted-foreground leading-relaxed">
-                            Con formación en <strong className="text-foreground">Ingeniería en Computación</strong>, combino
-                            experiencia técnica en IA, sistemas embebidos y desarrollo full-stack con habilidades
-                            comunicacionales para traducir necesidades de clientes en soluciones efectivas.
+                            {about.description[1]}
                         </p>
                     </div>
                     <div className="space-y-4">
-                        {[
-                            { icon: Brain, title: "Prompt Engineering", desc: "Creación y optimización de prompts para sistemas de IA conversacional." },
-                            { icon: Zap, title: "Desarrollo Agentic AI", desc: "Arquitecturas multi-agente y workflows automatizados." },
-                            { icon: Server, title: "Sistemas Embebidos", desc: "Programación de microcontroladores y sistemas de control." },
-                        ].map((item) => (
+                        {about.highlights.map((item) => (
                             <Card key={item.title} className="bg-card/50 backdrop-blur-sm border-border/50">
                                 <CardContent className="flex items-start gap-4 p-4">
                                     <div className="p-2 rounded-lg bg-primary/10">

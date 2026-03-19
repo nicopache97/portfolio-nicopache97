@@ -3,9 +3,12 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ChevronRight } from "lucide-react";
-import { expertiseCards } from "@/data/portfolio";
+import { usePortfolio } from "@/components/PortfolioContext";
 
 export function ExpertiseSection() {
+    const { data } = usePortfolio();
+    const { expertiseCards: portfolioExpertiseCards } = data;
+
     return (
         <section id="expertise" className="py-20 px-4 sm:px-6 lg:px-8">
             <div className="section-transition max-w-6xl mx-auto">
@@ -16,7 +19,7 @@ export function ExpertiseSection() {
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-6">
-                    {expertiseCards.map((card) => (
+                    {portfolioExpertiseCards.map((card) => (
                         <Card key={card.title} className="card-hover border-border/50 bg-card/50 backdrop-blur-sm">
                             <CardHeader className="pb-4">
                                 <div className="flex items-start justify-between mb-4">

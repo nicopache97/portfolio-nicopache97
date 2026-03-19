@@ -4,9 +4,12 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Github, Linkedin, Mail } from "lucide-react";
-import { stats } from "@/data/portfolio";
+import { usePortfolio } from "@/components/PortfolioContext";
 
 export function HeroSection() {
+    const { data } = usePortfolio();
+    const { hero, stats: portfolioStats } = data;
+
     return (
         <section id="hero" className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
             <div className="section-transition max-w-6xl mx-auto">
@@ -30,14 +33,13 @@ export function HeroSection() {
                         </div>
 
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold leading-tight">
-                            <span className="text-gradient">Prompt Engineer</span>
+                            <span className="text-gradient">{hero.title[0]}</span>
                             <br />
-                            <span className="text-foreground">&amp; AI Developer</span>
+                            <span className="text-foreground">{hero.title[1]}</span>
                         </h1>
 
                         <p className="text-lg text-muted-foreground max-w-xl">
-                            Desarrollo soluciones <strong className="text-foreground">creativas y automatizadas</strong> para la industria,
-                            especializándome en Prompt Engineering, Agentic AI y sistemas embebidos.
+                            {hero.description}
                         </p>
 
                         <div className="flex flex-wrap gap-3">
@@ -84,7 +86,7 @@ export function HeroSection() {
                         </div>
 
                         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8">
-                            {stats.map((stat) => (
+                            {portfolioStats.map((stat) => (
                                 <div key={stat.label} className="text-center sm:text-left">
                                     <div className="text-2xl sm:text-3xl font-bold text-primary">{stat.value}</div>
                                     <div className="text-xs text-muted-foreground uppercase tracking-wider">{stat.label}</div>
@@ -105,19 +107,14 @@ export function HeroSection() {
                             <pre className="text-sm font-mono text-muted-foreground overflow-x-auto">
                                 <code>{`{
   "nombre": "Nicolás Pacheco",
-  "rol": "Prompt Engineer",
-  "ubicacion": "La Plata, Argentina",
-  "especialidades": [
-    "Prompt Engineering",
-    "Agentic AI",
-    "Sistemas Embebidos",
-    "Full-Stack Dev"
-  ],
+  "rol": "${hero.location.includes("Neuquén") ? "Ingeniero en Computación" : "Prompt Engineer"}",
+  "ubicacion": "${hero.location}",
+  "especialidades": ${JSON.stringify(hero.specialties, null, 2)},
   "titulos": [ 
     "Ingeniería en Computación @ UNLP",
-    "Tecnico Electronico @ Albert Thomas"
+    "Técnico Electrónico @ Albert Thomas"
   ],
-  "estado": "Disponible para consultorías"
+  "estado": "${hero.status}"
 }`}</code>
                             </pre>
                         </div>

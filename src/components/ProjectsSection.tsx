@@ -4,9 +4,12 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Code2, ExternalLink, Github } from "lucide-react";
-import { projects } from "@/data/portfolio";
+import { usePortfolio } from "@/components/PortfolioContext";
 
 export function ProjectsSection() {
+    const { data } = usePortfolio();
+    const { projects: portfolioProjects } = data;
+
     return (
         <section id="proyectos" className="py-20 px-4 sm:px-6 lg:px-8">
             <div className="section-transition max-w-6xl mx-auto">
@@ -17,7 +20,7 @@ export function ProjectsSection() {
                 </p>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {projects.map((project) => (
+                    {portfolioProjects.map((project) => (
                         <Card key={project.title} className="card-hover border-border/50 bg-card/50 backdrop-blur-sm flex flex-col">
                             <CardHeader className="pb-4">
                                 <div className="flex items-start justify-between mb-2">
