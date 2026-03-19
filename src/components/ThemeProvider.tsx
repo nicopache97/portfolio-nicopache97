@@ -23,14 +23,11 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
-        setMounted(true);
         const stored = localStorage.getItem("theme") as Theme | null;
         if (stored) {
             setTheme(stored);
-        } else {
-            // Default to light as specifically requested
-            setTheme("light");
         }
+        setMounted(true);
     }, []);
 
     useEffect(() => {

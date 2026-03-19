@@ -7,6 +7,12 @@ import { JourneySection } from "@/components/JourneySection";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Nicolás Pacheco | Prompt Engineer & Full-Stack Developer AI",
+    description: "Portfolio profesional de Nicolás Pacheco, especializado en Inteligencia Artificial, Prompt Engineering y Sistemas Embebidos.",
+};
 
 export default function Home() {
     return (
