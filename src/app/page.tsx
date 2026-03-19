@@ -10,7 +10,7 @@ import { Footer } from "@/components/Footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Nicolás Pacheco | Prompt Engineer & Full-Stack Developer AI",
+    title: "Inicio",
     description: "Portfolio profesional de Nicolás Pacheco, especializado en Inteligencia Artificial, Prompt Engineering y Sistemas Embebidos.",
 };
 
