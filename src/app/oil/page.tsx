@@ -2,8 +2,8 @@ import PortfolioPage from "@/components/PortfolioPage";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "nicopache97.oil & Gas Tech | Vaca Muerta",
-    description: "Soluciones de IA y Automatización para la industria del petróleo y gas en Neuquén, Argentina.",
+    title: "Oil & Gas Tech",
+    description: "Soluciones de IA y Automatización para la industria del petróleo y gas en Cipolletti, Río Negro, Argentina.",
 };
 
 export default function OilPage() {

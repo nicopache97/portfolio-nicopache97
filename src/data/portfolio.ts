@@ -227,9 +227,9 @@ export const oilPortfolio: PortfolioData = {
     hero: {
         title: ["Ingeniería & IA", "para la Industria"],
         description: "Soluciones tecnológicas de monitoreo, automatización e IA aplicadas al sector energético y procesos industriales.",
-        location: "Neuquén / Remoto",
+        location: "Cipolletti, Río Negro / Remoto",
         specialties: ["IA Industrial & Agentes", "IIoT & Monitoreo Remoto", "Sistemas de Control", "Data Analytics"],
-        status: "Disponible para Vaca Muerta",
+        status: "listen to offers",
     },
     about: {
         title: ["Optimizando la", "Industria", "a través del", "Software & Datos"],
@@ -246,7 +246,7 @@ export const oilPortfolio: PortfolioData = {
     stats: [
         { value: "Ing.", label: "Computación" },
         { value: "10+", label: "Proyectos Tech" },
-        { value: "Vaca Muerta", label: "Neuquén Focus" },
+        { value: "Vaca Muerta", label: "Región" },
         { value: "IIoT", label: "Sensado/Control" },
     ],
     skills: {

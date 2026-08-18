@@ -7,7 +7,7 @@ import { ChevronRight, Github, Linkedin, Mail } from "lucide-react";
 import { usePortfolio } from "@/components/PortfolioContext";
 
 export function HeroSection() {
-    const { data } = usePortfolio();
+    const { mode, data } = usePortfolio();
     const { hero, stats: portfolioStats } = data;
 
     return (
@@ -27,7 +27,7 @@ export function HeroSection() {
                                     Ing. en Computación
                                 </Badge>
                                 <Badge variant="outline" className="text-xs w-fit border-primary/30 text-primary">
-                                    Disponible
+                                    {mode === "oil" ? hero.status : "Disponible"}
                                 </Badge>
                             </div>
                         </div>
@@ -96,7 +96,7 @@ export function HeroSection() {
                     </div>
 
                     {/* Code block decoration */}
-                    <div className="hidden lg:block w-full max-w-md">
+                    <div className="hidden lg:block w-full max-w-lg">
                         <div className="bg-card border border-border rounded-xl p-6 shadow-lg">
                             <div className="flex items-center gap-2 mb-4">
                                 <div className="w-3 h-3 rounded-full bg-red-400" />
@@ -107,7 +107,7 @@ export function HeroSection() {
                             <pre className="text-sm font-mono text-muted-foreground overflow-x-auto">
                                 <code>{`{
   "nombre": "Nicolás Pacheco",
-  "rol": "${hero.location.includes("Neuquén") ? "Ingeniero en Computación" : "Prompt Engineer"}",
+  "rol": "${mode === "oil" ? "Ingeniero en Computación" : "Prompt Engineer"}",
   "ubicacion": "${hero.location}",
   "especialidades": ${JSON.stringify(hero.specialties, null, 2)},
   "titulos": [ 

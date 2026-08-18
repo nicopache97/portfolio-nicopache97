@@ -3,7 +3,7 @@ import { Sparkles, Brain, Zap, Server } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export function AboutSection() {
-    const { data } = usePortfolio();
+    const { mode, data } = usePortfolio();
     const { about } = data;
 
     return (
@@ -15,8 +15,14 @@ export function AboutSection() {
                 </div>
 
                 <h2 className="text-3xl sm:text-4xl font-serif font-bold mb-8">
-                    {about.title[0]} <span className="text-gradient italic">{about.title[1]}</span> {about.title[2]}{" "}
-                    <span className="text-gradient italic">{about.title[3]}</span>
+                    {mode === "oil" ? (
+                        <>{about.title.join(" ")}</>
+                    ) : (
+                        <>
+                            {about.title[0]} <span className="text-gradient italic">{about.title[1]}</span> {about.title[2]}{" "}
+                            <span className="text-gradient italic">{about.title[3]}</span>
+                        </>
+                    )}
                 </h2>
 
                 <div className="grid md:grid-cols-2 gap-8 mb-12">
