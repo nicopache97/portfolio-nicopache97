@@ -1,7 +1,7 @@
 # Nicolás Pacheco
 
 **Prompt Engineer | Data | AI Dev**
-La Plata, Buenos Aires, Argentina
+Neuquen, Argentina
 
 📞 (+54) 9 221 3643760
 📧 [nicopache1997@gmail.com](mailto:nicopache1997@gmail.com)

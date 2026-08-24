@@ -72,7 +72,7 @@ export const defaultPortfolio: PortfolioData = {
     hero: {
         title: ["Prompt Engineer", "& AI Developer"],
         description: "Desarrollo soluciones creativas y automatizadas para la industria, especializándome en Prompt Engineering, Agentic AI y sistemas embebidos.",
-        location: "La Plata, Argentina",
+        location: "Neuquen, Argentina",
         specialties: ["Prompt Engineering", "Agentic AI", "Sistemas Embebidos", "Full-Stack Dev"],
         status: "Disponible para consultorías",
     },

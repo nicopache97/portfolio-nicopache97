@@ -2,11 +2,9 @@
 
 import { Button } from "@/components/ui/button";
 import { Linkedin, Mail, MapPin, Phone } from "lucide-react";
-import { usePortfolio } from "@/components/PortfolioContext";
 
 export function ContactSection() {
-    const { mode } = usePortfolio();
-    const location = mode === "oil" ? "Cipolletti, Río Negro, Argentina" : "La Plata, Buenos Aires, Argentina";
+    const location = "Neuquen, Argentina";
 
     return (
         <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 section-gradient">

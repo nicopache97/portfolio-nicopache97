@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CV OT - Nicolas Pacheco</title>
+<style>
+  :root {
+    --accent: #0e5a7a;
+    --text: #222;
+    --muted: #555;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 10pt;
+    color: var(--text);
+    line-height: 1.45;
+    padding: 32px 40px;
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+  }
+  header h1 { font-size: 22pt; letter-spacing: 1px; }
+  header .subtitle {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 11pt;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  h2 {
+    font-size: 11pt;
+    text-transform: uppercase;
+    color: var(--accent);
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 2px;
+    margin: 14px 0 8px;
+  }
+  .cols { display: flex; gap: 28px; }
+  .col-left { flex: 0 0 32%; }
+  .col-right { flex: 1; }
+  .contact-item { margin-bottom: 8px; }
+  .contact-item .label { font-size: 8pt; text-transform: uppercase; color: var(--muted); }
+  ul.skills { list-style: none; }
+  ul.skills li { margin-bottom: 6px; }
+  .edu-item { margin-bottom: 10px; }
+  .edu-item .degree { font-weight: 600; }
+  .edu-item .school, .edu-item .years { color: var(--muted); font-size: 9pt; }
+  .job { margin-bottom: 14px; }
+  .job-title { font-weight: 700; }
+  .job-meta { color: var(--muted); font-size: 9pt; margin-bottom: 3px; }
+  .job p { margin-top: 3px; }
+  .two-col { display: flex; gap: 28px; }
+  .two-col > div { flex: 1; }
+  .two-col ul { list-style: none; }
+  .two-col li { margin-bottom: 10px; }
+  .project { margin-bottom: 14px; page-break-inside: avoid; }
+  .project .p-title { font-weight: 700; }
+  .project .p-tags { color: var(--accent); font-size: 9pt; }
+  .project a { color: var(--accent); font-size: 9pt; word-break: break-all; }
+  .page-break { page-break-before: always; }
+  @media print {
+    body { padding: 0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Nicolas Pacheco</h1>
+  <div class="subtitle">Tecnologías IoT &amp; Industrial &amp; Oil</div>
+</header>
+
+<div class="cols">
+  <div class="col-left">
+    <h2>Contacto</h2>
+    <div class="contact-item">
+      <div class="label">Ubicación</div>
+      Neuquen, Argentina
+    </div>
+    <div class="contact-item">
+      <div class="label">Teléfono</div>
+      221 364 3760
+    </div>
+    <div class="contact-item">
+      <div class="label">Email</div>
+      nicopacheco1997@gmail.com
+    </div>
+    <div class="contact-item">
+      <div class="label">GitHub</div>
+      github.com/nicopache97
+    </div>
+    <div class="contact-item">
+      <div class="label">LinkedIn</div>
+      linkedin.com/in/nico-pacheco
+    </div>
+
+    <h2>Habilidades</h2>
+    <ul class="skills">
+      <li>Vercel, Docker, Bash Script, Linux</li>
+      <li>C, Python, NodeJS, NextJS, SQL, Scrum</li>
+      <li>RapidMiner 7, PLC Logo, TCP, UDP, WebSocket</li>
+      <li>Scada, Ladder, Crm, Orp</li>
+      <li>IoT, Microcontroladores, Sistemas de Control, PID</li>
+    </ul>
+
+    <h2>Educación</h2>
+    <div class="edu-item">
+      <div class="degree">Ingeniería En Computación</div>
+      <div class="school">Universidad Nacional de La Plata</div>
+      <div class="years">2017-2025</div>
+    </div>
+    <div class="edu-item">
+      <div class="degree">Técnico Electrónico</div>
+      <div class="school">Alberth Thomas</div>
+      <div class="years">2009-2016</div>
+    </div>
+  </div>
+
+  <div class="col-right">
+    <h2>Acerca de mí</h2>
+    <p>Soy Ingeniero en Computación con sólida formación en sistemas de control, automatización industrial e IoT. Combino experiencia en programación de bajo nivel (microcontroladores, PLC) con desarrollo de software y arquitecturas de datos. Apasionado por la resolución y optimización de incidentes técnicos y el monitoreo de sistemas críticos, busco aplicar mis habilidades en entornos OT de la industria energética.</p>
+
+    <h2>Experiencia y Trayectoria</h2>
+    <div class="job">
+      <div class="job-title">Prompt Engineer</div>
+      <div class="job-meta">Oct 2025 / Actualidad — Tecnom</div>
+      <p>En este período desarrollé todos los prompts de agentes AI para clientes nuevos y existentes (100+), arreglé los errores de prompts pre-existentes, generé una base sólida de estandarización del proceso de creación de prompts.</p>
+      <p>En simultáneo desarrollé y gestioné la base de conocimiento de 50+ clientes para potenciar el contexto. También dirigí reuniones con clientes para brindar asesoría y servicio directo.</p>
+    </div>
+    <div class="job">
+      <div class="job-title">Desarrollador JR Agentic AI</div>
+      <div class="job-meta">Mayo 2025 / Oct 2025 — Tecnom</div>
+      <p>Desarrollé herramientas de envío de imágenes, apoyé en el robustecimiento de la arquitectura actual junto con pruebas de multi-agentes y estandarización e implementación de parámetros place-holders para enriquecer el contexto de Tecna.</p>
+      <p>En simultáneo generé herramientas auxiliares para analizar el feedback, las conversaciones, y hacer métricas de calidad.</p>
+    </div>
+  </div>
+</div>
+
+<div class="two-col">
+  <div>
+    <h2>Actividades y Participaciones</h2>
+    <ul>
+      <li>Prácticas Profesionalizantes en Clasificación y Análisis de Imágenes y chats con IA — 2025 — Tecnom</li>
+      <li>Participación en Usina de Ideas, proyecto "Roppi" — 2024</li>
+      <li>Dictado de clases particulares de "Sistema de Comunicaciones", "Sistemas de Control", "CUNIV", "Electrónica" 2023-2024</li>
+      <li>Ayudantía Ad Honorem de "Circuitos Digitales y Microcontroladores" y "Taller de Proyecto I" — 2024 — UNLP</li>
+      <li>Desarrollo en "Mapeo con sensor láser SLAM" — 2017 — Club De Robótica UNLP</li>
+    </ul>
+  </div>
+  <div>
+    <h2>Cursos / Seminarios</h2>
+    <ul>
+      <li>Fundamentos de Power BI 2025 — Santander, Open Academy</li>
+      <li>Python for Data Science, AI and Development (4 semanas) — 2024 — Coursera, IBM</li>
+      <li>Space Apps Challenge — 2019 — NASA</li>
+      <li>Seminario de Blockchain Industria 3.0 — 2018 — CPCIBA y UPCN</li>
+      <li>Curso control numérico (CNC) Fresado y Torno — 2014 — Albert Thomas</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Proyectos</h2>
+
+<div class="project">
+  <span class="p-title">Alexa personalizado decodificador por voz con WebApp</span>
+  <span class="p-tags">(WhisperIA, IoT, Redes, Audio)</span>
+  <p>Arquitectura asimétrica con microcontrolador y server durante la cursada de "Taller de Proyecto II 2024". El Wemos D1 graba y envía streaming de voz por UDP. Server de control recepción UDP, comunicación WebSocket, envío de comandos a Wemos D1. Decodificación de comandos por voz por Whisper IA local dockerizado. WebApp dockerizada para control manual de iluminación con servidor de usuarios. Grupo de cuatro alumnos.</p>
+  <a href="https://github.com/tpII/2024-G3-CONTROL-VOZ-HOME-ASSISTANT">https://github.com/tpII/2024-G3-CONTROL-VOZ-HOME-ASSISTANT</a>
+</div>
+
+<div class="project">
+  <span class="p-title">Comparar grandes vectores de datos</span>
+  <span class="p-tags">(C, MPI, Pthreads, Arquitectura cluster, bash)</span>
+  <p>SpeedTest en C, para ejecutar con MPI y Pthreads en arquitecturas multinúcleo o clúster, donde se puede comparar y analizar Speedup y escalabilidad en diferentes arquitecturas dispuestas por la cátedra de "Sistemas Distribuidos y Paralelos - 2024". Implementé script bash para ejecutar tareas por lotes, la terminal y para comunicarnos con el servidor por SSH. Grupo de dos alumnos.</p>
+  <a href="https://github.com/notBraii/SDP-TP-final">https://github.com/notBraii/SDP-TP-final</a>
+</div>
+
+<div class="project">
+  <span class="p-title">Sable Láser</span>
+  <span class="p-tags">(Open Source, C, Microcontroladores, Sensores)</span>
+  <p>Durante la cursada de "Taller de Proyecto I-2023" desarrollamos e implementamos un sable de luz programado en C para la arquitectura Edu-Ciaa-Nxp con un procesador dual Cortex®-M4/M0 MCU. Junto a la gran implementación de módulos de software se desarrolló el prototipo con dos PCB personalizadas para conexión de los sensores y actuadores. Grupo de cinco alumnos.</p>
+  <a href="https://github.com/augustobor/Taller1-EDU-CIAA">https://github.com/augustobor/Taller1-EDU-CIAA</a>
+</div>
+
+<div class="project">
+  <span class="p-title">Reloj Pomodoro personalizado con db y usuario</span>
+  <span class="p-tags">(Ruby On Rails, SQlite3, JS, Docker)</span>
+  <p>Proyecto propio de un cronómetro personalizado para técnica pomodoro, con guardado de historial por usuario, con DB sqlite3, en Ruby On Rails, dockerizado para hostear en FL0 (actualmente no está hosteado).</p>
+  <a href="https://github.com/nicopache97/pomodorocontroller">https://github.com/nicopache97/pomodorocontroller</a>
+</div>
+
+<div class="project">
+  <span class="p-title">Alquiler de Autos con QR</span>
+  <span class="p-tags">(Scrum, Ingeniería de Software)</span>
+  <p>Webapp con Ruby On Rails, Js, HTML5, SCSS, bajo la metodología Scrum, durante la materia "Ingeniería de Software 2022", trabajo grupal donde cada uno fuimos Scrum Master durante un sprint para desarrollar habilidades de elicitación y comunicación con cliente. Grupo de tres alumnos.</p>
+  <a href="https://github.com/nicopache97/UNLP-IS-Alquilapp">https://github.com/nicopache97/UNLP-IS-Alquilapp</a>
+</div>
+
+<div class="project">
+  <span class="p-title">Repositorio de notebooks con jupyter notebook</span>
+  <span class="p-tags">(Python, Docker, Github Actions)</span>
+  <p>Repositorio de los notebooks utilizados en la materia "Deep Learning 2024", donde dockeriza jupyter notebook, crea automatización CI/CD con Github Actions para dockerizar, copiar los proyectos y subir a docker hub.</p>
+  <a href="https://github.com/nicopache97/UNLP-deepLerning">https://github.com/nicopache97/UNLP-deepLerning</a>
+</div>
+
+<div class="project">
+  <span class="p-title">Sistema de control PID con Monitoreo</span>
+  <span class="p-tags">(Arduino, ESP32, NodeJS, Control PID, IoT, Automatización)</span>
+  <p>Durante la cursada de "Arquitectura Avanzada de Procesadores - 2024" desarrollé un control PID sobre un sensor de luz, con una tira LED, para compensar los cambios externos. Además con NodeJS creé un script para comunicar con la ESP32 a través de una red privada, con el protocolo TCP. Grupo de dos alumnos.</p>
+  <a href="https://github.com/nicopache97/TCP-Monitoring-Sistem">https://github.com/nicopache97/TCP-Monitoring-Sistem</a>
+</div>
+
+<div class="project">
+  <span class="p-title">Sistema de Recomendación de Compañeros de Alquiler</span>
+  <span class="p-tags">(Python, SQL, FastAPI, Data Analyst)</span>
+  <p>Este proyecto propio está en desarrollo desde Marzo 2025, es una aplicación con frontend y backend dockerizada que implementa la funcionalidad principal: gestionar un buen sistema de recomendaciones entre usuarios para encontrar el compañero más compatible para compartir alquiler. Se basa en analizar las 14 características más relevantes para la convivencia.</p>
+  <a href="https://github.com/nicopache97/rental-recommendation-system">https://github.com/nicopache97/rental-recommendation-system</a>
+</div>
+
+<div class="project">
+  <span class="p-title">Sistema de indicadores en conversaciones con imágenes</span>
+  <span class="p-tags">(NextJS, OpenIA-API, IMG, Vercel)</span>
+  <p>Durante mis prácticas en Tecnom en 2025, trabajé en un sistema para clasificar y agregar metadata a imágenes para luego ser analizadas y sacar información estadística y de contexto. Luego agrandar la escala agregando contexto multimodal para análisis de conversaciones y generación de indicadores en chats reales. El resto de los detalles del proyecto son privados.</p>
+  <a href="https://github.com/nicopache97/">https://github.com/nicopache97/</a>
+</div>
+
+</body>
+</html>
