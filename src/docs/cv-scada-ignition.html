@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Nicolas Pacheco - SCADA / Automatizacion Oil &amp; Gas</title>
+    <style>
+        @page {
+            margin: 0;
+            size: A4;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 10pt;
+            line-height: 1.35;
+            color: #333;
+            background: #fff;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        .container {
+            width: 210mm;
+            height: 297mm;
+            margin: 0 auto;
+            padding: 12mm 15mm;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Header / Títulos */
+        header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+            color: white;
+            padding: 10px 20px;
+            margin: -12mm -15mm 10px -15mm;
+        }
+        h1 {
+            font-size: 22pt;
+            font-weight: 700;
+            margin-bottom: 3px;
+            letter-spacing: 0.5px;
+        }
+        .subtitle {
+            font-size: 10.5pt;
+            font-weight: 400;
+            opacity: 0.95;
+            margin-bottom: 8px;
+            line-height: 1.25;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 8.5pt;
+        }
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Secciones */
+        section {
+            margin-bottom: 9px;
+        }
+        h2 {
+            font-size: 12pt;
+            color: #1e3a5f;
+            border-bottom: 2px solid #2c5282;
+            padding-bottom: 3px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Acerca de */
+        .about-text {
+            text-align: justify;
+            font-size: 9.5pt;
+            line-height: 1.4;
+        }
+
+        /* Habilidades */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .skill-category {
+            background: #f0f4f8;
+            padding: 8px 10px;
+            border-left: 3px solid #2c5282;
+        }
+        .skill-category h3 {
+            font-size: 9.5pt;
+            color: #1e3a5f;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+        .skill-category p {
+            font-size: 8.5pt;
+            color: #555;
+            line-height: 1.3;
+        }
+
+        /* Experiencia */
+        .experience-item {
+            margin-bottom: 10px;
+        }
+        .experience-item h3 {
+            font-size: 10.5pt;
+            color: #1e3a5f;
+            margin-bottom: 2px;
+        }
+        .role-meta {
+            font-size: 8.5pt;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 4px;
+        }
+        .experience-item ul {
+            margin-left: 15px;
+            margin-top: 4px;
+        }
+        .experience-item li {
+            margin-bottom: 3px;
+            font-size: 9pt;
+            text-align: justify;
+        }
+
+        /* Educación */
+        .edu-item {
+            margin-bottom: 4px;
+            font-size: 9pt;
+        }
+        .edu-item strong {
+            color: #1e3a5f;
+        }
+
+        /* Proyectos */
+        .project-item {
+            margin-bottom: 6px;
+            padding-left: 10px;
+            border-left: 2px solid #cbd5e0;
+        }
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+        .project-title {
+            font-weight: 600;
+            color: #1e3a5f;
+            font-size: 9.5pt;
+        }
+        .project-date {
+            font-size: 8.5pt;
+            color: #666;
+            font-weight: 500;
+        }
+
+        /* Columnas de Actividades y Cursos */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 15px;
+            margin-bottom: 12px;
+        }
+        .two-col section {
+            margin-bottom: 0;
+        }
+        .two-col h2 {
+            font-size: 11pt;
+        }
+        .two-col ul {
+            margin-left: 14px;
+        }
+        .two-col li {
+            font-size: 8.5pt;
+            margin-bottom: 3px;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                padding: 12mm 15mm;
+                height: 100vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <header>
+                <h1>Nicolas Pacheco</h1>
+                <p class="subtitle">Ingeniero en Computación | Automatización Industrial, SCADA y Sistemas OT — Oil &amp; Gas | Neuquén, AR | Disponibilidad 14x7 / 7x7 / Rotativo / Viajes</p>
+                <div class="contact-info">
+                    <a href="https://wa.me/5492213643760">📞 +54 9 221 364 3760</a>
+                    <a href="mailto:nicopacheco1997@gmail.com">✉️ nicopacheco1997@gmail.com</a>
+                    <a href="https://github.com/nicopache97">💻 github.com/nicopache97</a>
+                    <a href="https://www.linkedin.com/in/nico-pacheco">🔗 linkedin.com/in/nico-pacheco</a>
+                </div>
+            </header>
+
+            <section>
+                <h2>Acerca de mí</h2>
+                <p class="about-text">Ingeniero en Computación orientado a la automatización industrial y la integración de sistemas de control (PLC, SCADA, HMI) con plataformas de datos. Formación de base técnica electrónica (PLC, control PID, instrumentación y microcontroladores) y experiencia desarrollando soluciones de telemetría, monitoreo en tiempo real y reportes operativos con Python y SQL. Complemento el perfil con inteligencia artificial aplicada al monitoreo de activos y mantenimiento predictivo. Enfocado en la continuidad operativa 24/7 en entornos críticos de Oil &amp; Gas.</p>
+            </section>
+
+            <section>
+                <h2>Habilidades Técnicas</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>OT &amp; Control</h3>
+                        <p>SCADA, PLC (Ladder, Logo! Siemens), HMI, Control PID, Instrumentación y sensores, IIoT/Telemetría, Microcontroladores, Protocolos (TCP/IP, UDP, WebSocket)</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Datos &amp; Reportes</h3>
+                        <p>Python, SQL y bases de datos relacionales, Power BI, Análisis de Datos, Automatización de Reportes, Tendencias e indicadores operativos (KPIs)</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>DevOps &amp; Gestión</h3>
+                        <p>Docker, Linux, Bash Script, Git, Scrum, Gestión de Incidentes, Soporte Técnico</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Experiencia y Trayectoria</h2>
+
+                <div class="experience-item">
+                    <h3>Ingeniero de Soluciones IA &amp; Datos</h3>
+                    <div class="role-meta">Tecnom (Scale-up) | Oct 2025 - Actualidad</div>
+                    <ul>
+                        <li>Gestión integral del ciclo de vida de agentes de IA para +100 clientes, reduciendo el tiempo de despliegue de soluciones de 2 semanas a 2 días mediante el desarrollo de una nueva interfaz y estandarización de arquitecturas gramaticales.</li>
+                        <li>Elaboración de reportes técnicos, análisis de conversaciones para detección de desvíos y soporte directo a stakeholders para asegurar la continuidad operativa y calidad del servicio.</li>
+                        <li>Desarrollo de scripts autoejecutables y aplicaciones interactivas para la automatización de reportes, gestión de bases de conocimiento y análisis de métricas operativas.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Desarrollador de Automatización &amp; Datos</h3>
+                    <div class="role-meta">Tecnom | May 2025 - Oct 2025</div>
+                    <ul>
+                        <li>Robustecimiento de arquitecturas multi-agente y desarrollo de herramientas auxiliares para el análisis de feedback, métricas de calidad y generación de indicadores operativos.</li>
+                        <li>Implementación de parámetros place-holders para enriquecer el contexto y desarrollo de herramientas de envío y procesamiento de datos multimodales para análisis estadístico.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Educación</h2>
+                <div class="edu-item"><strong>Ingeniería en Computación</strong> — Universidad Nacional de La Plata (UNLP) | 2017 - 2025</div>
+                <div class="edu-item"><strong>Técnico Electrónico</strong> — E.E.T. N°1 Albert Thomas (PLC, CNC, instrumentación) | 2009 - 2016</div>
+            </section>
+
+            <div class="two-col">
+                <section>
+                    <h2>Actividades y Participaciones</h2>
+                    <ul>
+                        <li>Prácticas Profesionalizantes en Clasificación y Análisis de Imágenes y chats con IA — Tecnom (2025)</li>
+                        <li>Dictado de clases particulares de "Sistemas de Control", "Sistema de Comunicaciones", "CUNIV", "Electrónica" (2023-2024)</li>
+                        <li>Ayudantía Ad Honorem de "Circuitos Digitales y Microcontroladores" y "Taller de Proyecto I" — UNLP (2024)</li>
+                        <li>Participación en Usina de Ideas, proyecto "Roppi" (2024)</li>
+                        <li>Desarrollo en "Mapeo con sensor láser SLAM" — Club De Robótica UNLP (2017)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Cursos / Seminarios</h2>
+                    <ul>
+                        <li>Técnico Superior en Petróleo | KENNEDY X (en curso)</li>
+                        <li>Fundamentos de Power BI 2025 — Santander, Open Academy</li>
+                        <li>Python for Data Science, AI and Development (4 semanas) — IBM, Coursera (2024)</li>
+                        <li>Space Apps Challenge — NASA (2019)</li>
+                        <li>Curso control numérico (CNC) Fresado y Torno — Albert Thomas (2014)</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <section style="margin-bottom: 0;">
+            <h2>Proyectos</h2>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <span class="project-title">Control PID y Monitoreo Telemétrico en Tiempo Real (IoT/TCP) <a href="https://github.com/nicopache97/TCP-Monitoring-Sistem">*</a></span>
+                    <span class="project-date">10/2024</span>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <span class="project-title">Asistente de Voz para Domótica y Control por Comandos (IoT/UDP) <a href="https://github.com/tpII/2024-G3-CONTROL-VOZ-HOME-ASSISTANT">*</a></span>
+                    <span class="project-date">11/2024</span>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <span class="project-title">Motor de Recomendación y Análisis de Datos (Python/SQL/FastAPI) <a href="https://github.com/nicopache97/rental-recommendation-system">*</a></span>
+                    <span class="project-date">3/2025</span>
+                </div>
+              </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <span class="project-title">Tablero de Indicadores y Análisis Multimodal de Imágenes con IA (NextJS/OpenAI) <a href="https://github.com/nicopache97/">*</a></span>
+                    <span class="project-date">4/2025</span>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</body>
